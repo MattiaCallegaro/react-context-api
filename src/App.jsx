@@ -11,7 +11,8 @@ function App() {
     <>
       {/* `rendo disponibili i post via Context */}
       {/* `doppia grafa perchè sto passando un oggetto */}
-      <PostContext.Provider value={{ posts }}>
+      {/* `grafa singola perchè paddo direttamente l'array */}
+      <PostContext.Provider value={posts}>
         <PostPage />
       </PostContext.Provider>
 
