@@ -1,8 +1,13 @@
 import React from 'react'
 
-const PostCard = () => {
+//PostCard è la singola card che mostra il post
+const PostCard = ({ post }) => {
     return (
-        <div>PostCard</div>
+        <div>
+            <h2>{ }</h2>
+            <p>{ }</p>
+            <p>{ }</p>
+        </div>
     )
 }
 

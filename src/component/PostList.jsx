@@ -9,8 +9,14 @@ const PostList = () => {
 
     //useContext mi fa leggere i dati del contesto
     const posts = useContext(PostContext)
+
     return (
-        <div>PostList</div>
+        <div>
+            {/* `tramite id recupero la card per ogni post */}
+            {posts.map(post => (
+                <PostCard key={post.id} post={post} />
+            ))}
+        </div>
     )
 }
 
