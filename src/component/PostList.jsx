@@ -13,6 +13,7 @@ const PostList = () => {
     return (
         <div>
             {/* `tramite id recupero la card per ogni post */}
+            {/* `con map mi ciclo l'array post generandone una copia  */}
             {posts.map(post => (
                 <PostCard key={post.id} post={post} />
             ))}
