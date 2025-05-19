@@ -4,9 +4,9 @@ import React from 'react'
 const PostCard = ({ post }) => {
     return (
         <div>
-            <h2>{ }</h2>
-            <p>{ }</p>
-            <p>{ }</p>
+            <h2>{post.title}</h2>
+            <p>{post.content}</p>
+            <p>{post.category}</p>
         </div>
     )
 }
