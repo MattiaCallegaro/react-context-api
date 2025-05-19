@@ -10,7 +10,8 @@ function App() {
   return (
     <>
       {/* `rendo disponibili i post via Context */}
-      <PostContext.Provider value={posts}>
+      {/* `doppia grafa perchè sto passando un oggetto */}
+      <PostContext.Provider value={{ posts }}>
         <PostPage />
       </PostContext.Provider>
 
